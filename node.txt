@@ -1,0 +1,20 @@
+使用文档教程
+https://micro.mu/docs/go-micro.html
+
+go get github.com/micro/go-micro
+go get github.com/micro/protoc-gen-micro
+
+
+进入proto目录执行下面命令生成
+protoc --proto_path=. --micro_out=. --go_out=. hello.proto
+
+
+go mod里面替换不能下载的包
+replace (
+    github.com/testcontainers/testcontainers-go => github.com/testcontainers/testcontainers-go v0.0.4
+    golang.org/x/lint => github.com/golang/lint latest
+)
+
+
+
+go get github.com/micro/go-plugins
