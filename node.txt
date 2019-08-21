@@ -18,3 +18,12 @@ replace (
 
 
 go get github.com/micro/go-plugins
+
+
+
+客户端熔断、降级是由客户端发起的
+
+
+
+xorm文档
+http://gobook.io/read/github.com/go-xorm/manual-zh-CN/
