@@ -53,7 +53,7 @@ type (
 func main() {
 
 
-	configFile := flag.String("f","./config/config.json","please use config.json")
+	configFile := flag.String("f","./config/config_rpc.json","please use config_rpc.json")
 	conf := new(Config)
 
 	if err := config.LoadFile(*configFile); err != nil {
@@ -111,7 +111,7 @@ func main() {
 
 
 
-	// Run the server
+	// Run the service
 	if err := service.Run(); err != nil {
 		fmt.Println(err)
 	}

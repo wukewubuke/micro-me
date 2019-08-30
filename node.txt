@@ -27,3 +27,16 @@ go get github.com/micro/go-plugins
 
 xorm文档
 http://gobook.io/read/github.com/go-xorm/manual-zh-CN/
+
+
+--micro_out: protoc-gen-micro: Plugin failed with status code 1.
+解决方案：go get github.com/micro/protoc-gen-micro
+
+
+
+uuid
+go get github.com/satori/go.uuid
+
+
+websocket
+go get github.com/gorilla/websocket

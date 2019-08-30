@@ -1,0 +1,21 @@
+{
+  "Version": "0.0.1",
+  "Port": ":7272",
+  "Server": {
+    "Name": "im.server.1",
+    "RateLimit": 1000
+  },
+  "Etcd": {
+    "Addrs": [
+      "127.0.0.1:2379"
+    ],
+    "UserName": "",
+    "Password": ""
+  },
+  "RabbitMq": {
+    "Addresses": [
+      "amqp://guest:guest@127.0.0.1:5672/"
+    ],
+    "topic": "im.server.1"
+  }
+}

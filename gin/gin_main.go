@@ -63,7 +63,7 @@ type (
 func main() {
 
 
-	configFile := flag.String("f","./config/config.json","please use config.json")
+	configFile := flag.String("f","./config/config_rpc.json","please use config_rpc.json")
 	conf := new(Config)
 
 	if err := config.LoadFile(*configFile); err != nil {
@@ -89,7 +89,7 @@ func main() {
 
 	// Create a new service. Optionally include some options here.
 	service := web.NewService(
-		web.Name("gin.api.server"),
+		web.Name("gin.api.service"),
 		web.Registry(etcdRegisty),
 		web.Address(":8080"),
 	)

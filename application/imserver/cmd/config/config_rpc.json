@@ -1,0 +1,30 @@
+{
+  "Version": "0.0.1",
+  "Server": {
+    "Name": "im.rpc.server",
+    "RateLimit": 1000
+  },
+  "Etcd": {
+    "Addrs": [
+      "127.0.0.1:2379"
+    ],
+    "UserName": "",
+    "Password": ""
+  },
+  "ImServerList": [
+    {
+      "AmqbAddress": [
+        "amqp://guest:guest@127.0.0.1:5672/"
+      ],
+      "Topic": "im.server.1",
+      "ServerName": "im.server.1"
+    },
+    {
+      "AmqbAddress": [
+        "amqp://guest:guest@127.0.0.1:5672/"
+      ],
+      "Topic": "im.server.2",
+      "ServerName": "im.server.2"
+    }
+  ]
+}

@@ -11,8 +11,13 @@ require (
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/go-xorm/xorm v0.7.6
 	github.com/golang/protobuf v1.3.2
+	github.com/gorilla/websocket v1.4.1
 	github.com/juju/ratelimit v1.0.1
+	github.com/micro/cli v0.2.0
 	github.com/micro/go-micro v1.8.2
 	github.com/micro/go-plugins v1.2.0
+	github.com/micro/protoc-gen-micro v0.8.0 // indirect
 	github.com/prometheus/common v0.6.0
+	github.com/satori/go.uuid v1.2.0
+	gopkg.in/go-playground/validator.v8 v8.18.2
 )

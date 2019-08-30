@@ -2,16 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91aaa9a3-9c9a-44fe-a8e3-71d7bf67593d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/demo_main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gin/gin_main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/tran_main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common/baseerror/baseerror.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common/baseresponse/baseresponse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common/i18n/zh.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common/middleware/middleware.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/gateway/cmd/api/gateway_api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/gateway/cmd/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/gateway/cmd/config/config_api.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/gateway/controller/gatewaycontroller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/gateway/logic/gatewaylogic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/gateway/model/gatewaymodel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/imserver/cmd/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/imserver/cmd/config/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/imserver/cmd/config/config_im_1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/imserver/cmd/config/config_im_2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/imserver/cmd/config/config_rpc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/imserver/cmd/im/imserver.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/imserver/cmd/rpc/imrpc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/imserver/protos/im.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/imserver/rpcserverimpl/imserverimpl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/imserver/service/imservice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/imserver/service/rabbitmqservice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/userserver/cmd/api/user_api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/userserver/cmd/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/userserver/cmd/config/config_api.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/userserver/cmd/config/config_rpc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/userserver/cmd/rpc/user_rpc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/userserver/controller/usercontroller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/userserver/logic/userlogic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/userserver/model/usermodel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/userserver/protos/user.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/userserver/rpcserverimpl/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pointer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/slice.../main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/slicereturn/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2de595be-96ed-44ee-b7a0-e80a83341509.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2de595be-96ed-44ee-b7a0-e80a83341509.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client_main.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/client_main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gin/gin_main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gin/gin_main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/hello.micro.go" beforeDir="false" afterPath="$PROJECT_DIR$/proto/hello.micro.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/hello.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/proto/hello.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server_main.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/server_main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,14 +79,13 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="mysql1" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="members: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="gateway: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="mysql1" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="members: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="order: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -62,12 +95,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="mysql2" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="mysql2" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="balance: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -97,51 +124,97 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/transaction/tran_main.go">
+        <entry file="file://$PROJECT_DIR$/application/imserver/service/rabbitmqservice.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="136" column="36" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
+            <state relative-caret-position="-11">
+              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
               <folding>
-                <element signature="e#27#108#0" expanded="true" />
+                <element signature="e#17#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://2de595be-96ed-44ee-b7a0-e80a83341509/schema/members/table/user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="f5924d6d-c3a9-40dd-bfaf-9fcd4be320d7">
-              <filtering>
-                <filter text="" />
-              </filtering>
+        <entry file="file://$PROJECT_DIR$/application/imserver/protos/im.proto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2de595be-96ed-44ee-b7a0-e80a83341509/console_1.sql">
+        <entry file="file://$PROJECT_DIR$/application/gateway/cmd/api/gateway_api.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="266">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+              <folding>
+                <element signature="e#14#749#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/17d844d8-d32d-474e-9cb7-17f7b0435388/console.sql">
+        <entry file="file://$PROJECT_DIR$/application/gateway/controller/gatewaycontroller.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="280">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6b5f2648-52b1-4ac2-bd43-d89e8ce0b338/console_1.sql">
+        <entry file="file://$PROJECT_DIR$/application/gateway/logic/gatewaylogic.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="329">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/imserver/cmd/im/imserver.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+              <folding>
+                <element signature="e#14#410#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/imserver/cmd/rpc/imrpc.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+              <folding>
+                <element signature="e#14#546#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/imserver/rpcserverimpl/imserverimpl.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="36" column="47" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="47" />
+              <folding>
+                <element signature="e#23#224#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/imserver/protos/im.micro.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
             </state>
           </provider>
         </entry>
@@ -151,10 +224,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="Go Application" />
+        <option value="Go File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>FindById</find>
+      <find>topic</find>
+      <find>imAddressList</find>
+    </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -163,22 +243,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/proto/hello.proto" />
-        <option value="$PROJECT_DIR$/go.mod" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ff908c1b-c148-4de8-8dcb-05a019692a1c/console.sql" />
-        <option value="$PROJECT_DIR$/config/config.json" />
-        <option value="$PROJECT_DIR$/client/client_main.go" />
-        <option value="$PROJECT_DIR$/demo/demo.main.go" />
-        <option value="$PROJECT_DIR$/demo/demo_main.go" />
+        <option value="$PROJECT_DIR$/application/userserver/cmd/user_api.go" />
+        <option value="$PROJECT_DIR$/application/userserver/cmd/protos/hello.proto" />
+        <option value="$PROJECT_DIR$/application/userserver/cmd/protos/user.proto" />
+        <option value="$PROJECT_DIR$/application/userserver/model/user.go" />
+        <option value="$PROJECT_DIR$/application/userserver/protos/user.micro.go" />
+        <option value="$PROJECT_DIR$/application/userserver/cmd/config/config.json" />
+        <option value="$PROJECT_DIR$/application/userserver/cmd/user_rpc.go" />
+        <option value="$PROJECT_DIR$/application/userserver/cmd/rpc/user_rpc.go" />
+        <option value="$PROJECT_DIR$/application/common/baseerror/baseerror.go" />
+        <option value="$PROJECT_DIR$/application/common/baseresponse.go" />
+        <option value="$PROJECT_DIR$/application/userserver/cmd/config/config.go" />
+        <option value="$PROJECT_DIR$/application/common/baseresponse/baseresponse.go" />
+        <option value="$PROJECT_DIR$/application/userserver/controller/usercontroller.go" />
+        <option value="$PROJECT_DIR$/application/userserver/cmd/api/user_api.go" />
+        <option value="$PROJECT_DIR$/application/userserver/model/usermodel.go" />
+        <option value="$PROJECT_DIR$/application/userserver/cmd/config/config_rpc.json" />
+        <option value="$PROJECT_DIR$/application/userserver/cmd/config/config_api.json" />
+        <option value="$PROJECT_DIR$/application/userserver/logic/userlogic.go" />
+        <option value="$PROJECT_DIR$/application/common/i18n/zh.go" />
+        <option value="$PROJECT_DIR$/application/gateway/controller/gatewaycontroller.go" />
+        <option value="$PROJECT_DIR$/application/common/middleware/middleware.go" />
+        <option value="$PROJECT_DIR$/application/userserver/rpcserverimpl/user.go" />
         <option value="$PROJECT_DIR$/server/server_main.go" />
-        <option value="$PROJECT_DIR$/gin/gin_main.go" />
+        <option value="$PROJECT_DIR$/application/imserver/logic/imlogic.go" />
+        <option value="$PROJECT_DIR$/application/imserver/server/imlogic.go" />
+        <option value="$PROJECT_DIR$/application/imserver/server/imserver.go" />
         <option value="$PROJECT_DIR$/node.txt" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2de595be-96ed-44ee-b7a0-e80a83341509/console_2.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6b5f2648-52b1-4ac2-bd43-d89e8ce0b338/console_1.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/17d844d8-d32d-474e-9cb7-17f7b0435388/console.sql" />
+        <option value="$PROJECT_DIR$/test/slicereturn/main.go" />
+        <option value="$PROJECT_DIR$/application/imserver/cmd/imserver.go" />
+        <option value="$PROJECT_DIR$/test/pointer/main.go" />
+        <option value="$PROJECT_DIR$/test/slice.../main.go" />
+        <option value="$PROJECT_DIR$/application/gateway/model/gatewaymodel.go" />
+        <option value="$PROJECT_DIR$/application/gateway/cmd/config/config_api.json" />
+        <option value="$PROJECT_DIR$/application/gateway/cmd/config/config.go" />
+        <option value="$PROJECT_DIR$/application/gateway/cmd/api/gateway_api.go" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2de595be-96ed-44ee-b7a0-e80a83341509/console_1.sql" />
-        <option value="$PROJECT_DIR$/transaction/tran_main.go" />
+        <option value="$PROJECT_DIR$/application/imserver/service/publisherservice.go" />
+        <option value="$PROJECT_DIR$/application/imserver/service/imservice.go" />
+        <option value="$PROJECT_DIR$/application/imserver/protos/im.proto" />
+        <option value="$PROJECT_DIR$/application/imserver/cmd/config/config.json" />
+        <option value="$PROJECT_DIR$/application/imserver/cmd/config/config_im_1.json" />
+        <option value="$PROJECT_DIR$/application/imserver/cmd/config/config_im_2.json" />
+        <option value="$PROJECT_DIR$/application/imserver/cmd/config/config.go" />
+        <option value="$PROJECT_DIR$/application/common/config/config.go" />
+        <option value="$PROJECT_DIR$/application/imserver/cmd/im/imserver.go" />
+        <option value="$PROJECT_DIR$/application/imserver/cmd/config/config_rpc.json" />
+        <option value="$PROJECT_DIR$/application/gateway/logic/gatewaylogic.go" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/application/imserver/cmd/rpc/imrpc.go" />
+        <option value="$PROJECT_DIR$/application/imserver/service/rabbitmqservice.go" />
+        <option value="$PROJECT_DIR$/application/imserver/rpcserverimpl/imserverimpl.go" />
       </list>
     </option>
   </component>
@@ -207,16 +322,133 @@
             <path>
               <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
               <item name="micro-me" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
               <item name="micro-me" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="imserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="imserver" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="imserver" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="imserver" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+              <item name="im" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="imserver" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="imserver" type="462c0819:PsiDirectoryNode" />
+              <item name="protos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="imserver" type="462c0819:PsiDirectoryNode" />
+              <item name="rpcserverimpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="imserver" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro-me" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go Modules &lt;micro-me&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.12" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.12" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.12" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sync" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micro-me" type="b2602c69:ProjectViewProjectNode" />
@@ -253,14 +485,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/imserver/cmd/config" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -270,6 +502,22 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/imserver/cmd/config" />
+      <recent name="$PROJECT_DIR$/application/imserver/cmd" />
+      <recent name="$PROJECT_DIR$/application/gateway/cmd" />
+      <recent name="$PROJECT_DIR$/application/userserver/cmd/config" />
+      <recent name="$PROJECT_DIR$/application/userserver/cmd/protos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/imserver/cmd/im" />
+      <recent name="$PROJECT_DIR$/application/common/baseresponse" />
+      <recent name="$PROJECT_DIR$/application/userserver/cmd/rpc" />
+      <recent name="$PROJECT_DIR$/application/userserver/cmd" />
+      <recent name="$PROJECT_DIR$/application/userserver" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -283,78 +531,98 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build tran_main.go">
-    <configuration name="go build client_main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build micro-me/application/imserver/cmd/rpc">
+    <configuration name="go build micro-me/application/gateway/cmd/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="micro-me" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/client/client_main.go" />
-      <package value="micro-me" />
+      <parameters value="-f $PROJECT_DIR$/application/gateway/cmd/config/config_api.json" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="micro-me/application/gateway/cmd/api" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build demo_main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build micro-me/application/imserver/cmd/rpc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="micro-me" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/demo/demo_main.go" />
+      <parameters value="-f $PROJECT_DIR$/application/imserver/cmd/config/config_rpc.json" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="micro-me/application/imserver/cmd/rpc" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build gin_main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build micro-me/application/userserver/cmd/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="micro-me" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/gin/gin_main.go" />
+      <parameters value="-f $PROJECT_DIR$/application/userserver/cmd/config/config_api.json" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="micro-me/application/userserver/cmd/api" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build server_main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build micro-me/application/userserver/cmd/rpc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="micro-me" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/server/server_main.go" />
-      <package value="micro-me" />
+      <parameters value="-f $PROJECT_DIR$/application/userserver/cmd/config/config_rpc.json" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="micro-me/application/userserver/cmd/rpc" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build tran_main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build user_rpc.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="micro-me" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/transaction/tran_main.go" />
+      <filePath value="$PROJECT_DIR$/application/userserver/cmd/user_rpc.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.go build micro-me/application/imserver/cmd/rpc" />
+      <item itemvalue="Go Build.go build micro-me/application/userserver/cmd/api" />
+      <item itemvalue="Go Build.go build micro-me/application/userserver/cmd/rpc" />
+      <item itemvalue="Go Build.go build micro-me/application/gateway/cmd/api" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build tran_main.go" />
-        <item itemvalue="Go Build.go build gin_main.go" />
-        <item itemvalue="Go Build.go build server_main.go" />
-        <item itemvalue="Go Build.go build client_main.go" />
-        <item itemvalue="Go Build.go build demo_main.go" />
+        <item itemvalue="Go Build.go build micro-me/application/userserver/cmd/rpc" />
+        <item itemvalue="Go Build.go build micro-me/application/gateway/cmd/api" />
+        <item itemvalue="Go Build.go build micro-me/application/userserver/cmd/api" />
+        <item itemvalue="Go Build.go build micro-me/application/imserver/cmd/rpc" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22161172" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22161172" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32959184" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993895" weight="0.327551" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.498779" weight="0.3989796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32959184" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.501221" side_tool="true" weight="0.3989796" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -364,6 +632,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>http://mirrors.aliyun.com/goproxy/</proxy>
@@ -372,218 +666,297 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/transaction/tran_main.go</url>
-          <line>66</line>
+          <url>file://$PROJECT_DIR$/application/gateway/logic/gatewaylogic.go</url>
+          <line>80</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/proto/hello.micro.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Go/pkg/mod/github.com/micro/go-micro@v1.8.2/registry/registry.go" />
-    <entry file="file://$PROJECT_DIR$/../../Go/pkg/mod/github.com/micro/go-micro@v1.8.2/server/options.go" />
-    <entry file="file://$PROJECT_DIR$/../../Go/pkg/mod/github.com/micro/go-micro@v1.8.2/options.go" />
-    <entry file="file://$PROJECT_DIR$/../../Go/pkg/mod/github.com/micro/go-plugins@v1.2.0/registry/etcdv3/etcdv3.go" />
-    <entry file="file://$PROJECT_DIR$/go.sum">
+    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/go-xorm/xorm@v0.7.6/session_find.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="82" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
+        <state relative-caret-position="348">
+          <caret line="73" column="62" selection-start-line="73" selection-start-column="59" selection-end-line="73" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ff908c1b-c148-4de8-8dcb-05a019692a1c/console.sql">
+    <entry file="file://$PROJECT_DIR$/application/userserver/controller/usercontroller.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proto/hello.pb.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/config/cmd/options.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-plugins@v1.2.0/registry/etcdv3/etcdv3.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="112" column="25" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/registry/registry.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proto/hello.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/micro.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/server/options.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/options.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/demo_main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#14#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/broker/broker.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/client_main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-          <folding>
-            <element signature="e#14#180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="200">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="32" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gin/gin_main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="113" column="37" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="37" />
+        <state relative-caret-position="387">
+          <caret line="167" column="1" lean-forward="true" selection-start-line="140" selection-end-line="167" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/baseresponse/baseresponse.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/userserver/logic/userlogic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="97" column="72" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/gin-gonic/gin@v1.4.0/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="580" column="18" selection-start-line="580" selection-start-column="18" selection-end-line="580" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/i18n/zh.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/userserver/protos/user.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="16" lean-forward="true" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/middleware/middleware.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="e#20#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/sync/mutex.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/slicereturn/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/io/ioutil/ioutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/gorilla/websocket@v1.4.1/conn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="1067" column="24" selection-start-line="1067" selection-start-column="24" selection-end-line="1067" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/userserver/rpcserverimpl/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="27" column="120" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="120" />
+          <folding>
+            <element signature="e#23#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pointer/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/slice.../main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/userserver/cmd/rpc/user_rpc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="e#14#613#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/userserver/cmd/api/user_api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+          <folding>
+            <element signature="e#14#496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/gateway/model/gatewaymodel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/gateway/cmd/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/gateway/cmd/config/config_api.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server_main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="97" column="32" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="32" />
           <folding>
             <element signature="e#14#422#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server_main.go">
+    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/broker/http_broker.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="113" column="11" selection-end-line="151" />
-          <folding>
-            <element signature="e#14#181#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="500" column="21" selection-start-line="500" selection-start-column="21" selection-end-line="500" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2de595be-96ed-44ee-b7a0-e80a83341509/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2de595be-96ed-44ee-b7a0-e80a83341509/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///usr/local/go/src/reflect/value.go">
+    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/options.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="2244" column="8" selection-start-line="2244" selection-start-column="8" selection-end-line="2244" selection-end-column="16" />
+        <state relative-caret-position="319">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/go-xorm/xorm@v0.7.6/helpers.go">
+    <entry file="file://$PROJECT_DIR$/application/common/config/config.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="278" column="22" lean-forward="true" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
+        <state relative-caret-position="286">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6b5f2648-52b1-4ac2-bd43-d89e8ce0b338/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/go-xorm/xorm@v0.7.6/session_update.go">
+    <entry file="file://$PROJECT_DIR$/application/imserver/cmd/config/config_rpc.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="171" column="17" selection-start-line="171" selection-start-column="16" selection-end-line="171" selection-end-column="17" />
+        <state relative-caret-position="331">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/go-xorm/xorm@v0.7.6/session_insert.go">
+    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/broker/options.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="210">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node.txt">
+    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-plugins@v1.2.0/broker/rabbitmq/rabbitmq.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        <state relative-caret-position="-1046">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/go-xorm/xorm@v0.7.6/engine.go">
+    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/broker/broker.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="609" column="21" selection-start-line="609" selection-start-column="19" selection-end-line="609" selection-end-column="21" />
+        <state relative-caret-position="186">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/transaction/tran_main.go">
+    <entry file="file://$PROJECT_DIR$/application/imserver/service/imservice.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="136" column="36" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
-          <folding>
-            <element signature="e#27#108#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="203">
+          <caret line="117" column="20" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="das://2de595be-96ed-44ee-b7a0-e80a83341509/schema/members/table/user">
+    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/micro/go-micro@v1.8.2/server/rpc_server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/imserver/cmd/config/config_im_1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/imserver/cmd/config/config_im_2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/imserver/cmd/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/imserver/cmd/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/runtime/proc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="307" column="1" lean-forward="true" selection-start-line="307" selection-start-column="1" selection-end-line="307" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2de595be-96ed-44ee-b7a0-e80a83341509/schema/members/table/members">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="f5924d6d-c3a9-40dd-bfaf-9fcd4be320d7">
           <filtering>
@@ -594,22 +967,100 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2de595be-96ed-44ee-b7a0-e80a83341509/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="404">
+          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/17d844d8-d32d-474e-9cb7-17f7b0435388/console.sql">
+    <entry file="file:///usr/local/go/src/runtime/asm_amd64.s">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="187">
+          <caret line="519" selection-start-line="519" selection-end-line="519" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6b5f2648-52b1-4ac2-bd43-d89e8ce0b338/console_1.sql">
+    <entry file="file:///usr/local/go/src/reflect/value.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="27" />
+        <state relative-caret-position="355">
+          <caret line="472" selection-start-line="472" selection-end-line="472" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/imserver/protos/im.micro.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/imserver/protos/im.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/imserver/service/rabbitmqservice.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+          <folding>
+            <element signature="e#17#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/gateway/cmd/api/gateway_api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="e#14#749#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/gateway/controller/gatewaycontroller.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/imserver/cmd/im/imserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+          <folding>
+            <element signature="e#14#410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/imserver/cmd/rpc/imrpc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+          <folding>
+            <element signature="e#14#546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/imserver/rpcserverimpl/imserverimpl.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="47" />
+          <folding>
+            <element signature="e#23#224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/gateway/logic/gatewaylogic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
